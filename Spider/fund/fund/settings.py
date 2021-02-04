@@ -65,6 +65,11 @@ ROBOTSTXT_OBEY = True
 ITEM_PIPELINES = {
     'fund.pipelines.FundPipeline': 300,
     'fund.jzhistory_pipelines.JZHistoryPipeline': 300,
+    'fund.jjgk_pipelines.JJGKPipeline': 300,
+    'fund.jjjl_pipelines.JJJLPipeline': 300,
+    'fund.jjjl_pipelines.JJJLFundHistoryPipeline': 300,
+    'fund.jjjl_pipelines.JJJLCurrentFundPipeline': 300,
+
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -87,3 +92,6 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+LOG_FILE = 'log.txt'
+LOG_LEVEL = 'ERROR'

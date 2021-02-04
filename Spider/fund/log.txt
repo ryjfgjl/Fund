@@ -1,0 +1,87 @@
+2021-01-28 14:15:43 [scrapy.core.scraper] ERROR: Spider error processing <GET http://fund.eastmoney.com/manager/30080851.html> (referer: None)
+Traceback (most recent call last):
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "E:\Python\Project\Fund\Spider\fund\fund\spiders\jjjl.py", line 88, in parse
+    fundname = tds[1].get_text()
+IndexError: list index out of range
+2021-01-28 14:16:16 [scrapy.core.scraper] ERROR: Spider error processing <GET http://fund.eastmoney.com/manager/30297924.html> (referer: None)
+Traceback (most recent call last):
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "E:\Python\Project\Fund\Spider\fund\fund\spiders\jjjl.py", line 88, in parse
+    fundname = tds[1].get_text()
+IndexError: list index out of range
+2021-01-28 14:17:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://fund.eastmoney.com/manager/30708819.html> (referer: None)
+Traceback (most recent call last):
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "F:\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 347, in __next__
+    return next(self.data)
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "F:\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "E:\Python\Project\Fund\Spider\fund\fund\spiders\jjjl.py", line 64, in parse
+    fundname = tds[1].get_text()
+IndexError: list index out of range

@@ -15,22 +15,17 @@ html = etree.HTML(html)
 num_boxes = html.xpath('//div[@id="code_content"]//div[@class="num_box"]')
 allfund = []
 
-num_box = num_boxes[0]
 
-lies = num_box.xpath('//div/ul/li[1]')[0]
-print(lies)
-fund = lies.xpath('//li/div/a[1]/text()')[0]
-print(fund)
-
-"""
-for num_box in [num_boxes[0]]:    lies = num_box.xpath('//div[@id="code_content"]//div[@class="num_box"]/ul/li')
+for num_box in [num_boxes[0]]:
     lies = num_box.xpath('//div[@id="code_content"]//div[@class="num_box"]/ul/li')
     for li in [lies[0]]:
-        fund = li.xpath('//div[@id="code_content"]//div[@class="num_box"]/ul/li/div/a[1]/text()')
-        code = fund[0].strip('(')
-        #name = fund[1].strip()
-        #allfund.append([code, name])
-#sql = 'insert into fund(code, name) select "{0}", "{1}"'.format(code, name)
-#Sql.exec_sq(db_conn, sql, allfund)
-        
-"""
+        funds = li.xpath('//div[@id="code_content"]//div[@class="num_box"]/ul/li/div/a[1]/text()')
+        for fund in funds:
+            print(fund)
+            code = fund.split('）')[0][1:]
+            name = fund.split('）')[1]
+            sql = 'insert into fund(code, name) values ("{}", "{}")'.format(code, name)
+            Sql.exec_sql(db_conn, sql)
+
+
+
